@@ -11,10 +11,13 @@ The code is organised in three files:
 
 In medsimMain.R, we load the necessary libraries and source files and then simulate truth data. Data is generated for four cases: 
 
-  -exposure A set to 1 and mediators set to levels they would have been at with an exposure of 1   A1M1
-  -exposure A set to 0 and mediators set to levels they would have been at with an exposure of 0   A0M0
-  -exposure A set to 1 but mediators set to levels they would have been at with an exposure of 0   A1M0
-  -exposure A set to 0 but mediators set to levels they would have been at with an exposure of 1   A0M1
+  -exposure A set to 1 and mediators set to levels they would have been at with an exposure of 1   (A1M1)
+  
+  -exposure A set to 0 and mediators set to levels they would have been at with an exposure of 0   (A0M0)
+  
+  -exposure A set to 1 but mediators set to levels they would have been at with an exposure of 0   (A1M0)
+  
+  -exposure A set to 0 but mediators set to levels they would have been at with an exposure of 1   (A0M1)
 From this data, we calculate the total effect "truth" as A1M1 / A0M0, the direct effect truth as A1M0/A0M0 and the indirect effect truth as A1M1/A1M0.  The next step is to calculate the simulated data for analysis by the selected mediation methods.  Note that data is written out as one data frame. The mediation code will need to split it up into smaller simulated data files.
 
 Scenario1.R contains all of the parameters for controlling the simulation. By creating different versions of Scenario1.R, you can investigate different simulation scenarios without changing any code.
