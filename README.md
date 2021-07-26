@@ -10,6 +10,7 @@ This code was written in R v4.0.2 running on a Windows 10 PC.
 The code is organised in three files:
 
 In medsimMain.R, we load the necessary libraries and source files and then simulate truth data. Data is generated for four cases: 
+
   -exposure A set to 1 and mediators set to levels they would have been at with an exposure of 1   A1M1
   -exposure A set to 0 and mediators set to levels they would have been at with an exposure of 0   A0M0
   -exposure A set to 1 but mediators set to levels they would have been at with an exposure of 0   A1M0
